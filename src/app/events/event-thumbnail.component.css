@@ -1,0 +1,11 @@
+.thumbnail {
+    min-height: 270px;
+}
+
+.green {
+    color: rgba(68, 212, 116, 0.986);
+}
+
+.bold {
+    font-weight: 700;
+}

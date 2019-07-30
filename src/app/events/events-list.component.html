@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<div>
+    <div>
+        <div class="feature-icon-base" style="transform: scale(0.7)">
+            <div class="icon teal develop-icon">
+                <div class="circle">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+            </div>
+        </div>
+        <h1 style="display: inline-block;top: -33px;position: relative;">
+            Upcoming events
+        </h1>
+    </div>
+    <hr />
+    <div class="row">
+        <div *ngFor="let event1 of events" class="col-md-5 center-block">
+            <app-event-thumbnail #thumbnail (eventClickha1111)="handleClickEvent($event)"
+                (click)="handleThumbnailClick1(event1.name)" [event]="event1"></app-event-thumbnail>
+        </div>
+    </div>
+    <div class="explore-chapter-base">
+        <div class="explore-card-base">
+            <div class="explore-card">
+                <div class="card">
+                    <div class="inner">
+                        <div class="top">
+                            <div class="sub-title t-top">
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <div class="title">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="play"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        <div class="bot">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button (click)="thumbnail.outputFoo()">Call me Foo dd</button>
+</div>

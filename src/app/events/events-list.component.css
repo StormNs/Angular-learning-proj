@@ -1,0 +1,203 @@
+.feature-icon-base {
+    position: relative;
+    display: inline-block;
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+}
+
+.feature-icon-base .icon {
+    background: -webkit-gradient(linear, left top, right bottom, from(#e0e0e0), to(#bdbdbd));
+    background: -o-linear-gradient(top left, #e0e0e0 0%, #bdbdbd 100%);
+    background: linear-gradient(to bottom right, #e0e0e0 0%, #bdbdbd 100%);
+    color: #9e9e9e;
+    position: relative;
+    margin: 0 20px;
+    width: 56px;
+    height: 87px;
+    border-radius: 10px;
+}
+
+.feature-icon-base .icon.teal {
+    background: -webkit-gradient(linear, left top, right bottom, from(#4db6ac), to(#00796b));
+    background: -o-linear-gradient(top left, #4db6ac 0%, #00796b 100%);
+    background: linear-gradient(to bottom right, #4db6ac 0%, #00796b 100%);
+    color: #34a297;
+}
+
+.feature-icon-base .icon::before, .feature-icon-base .icon::after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    content: '';
+    background: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.feature-icon-base .icon::before {
+    transform: rotate(60deg);
+}
+
+.feature-icon-base .icon::after {
+    transform: rotate(-60deg);
+}
+
+.feature-icon-base .icon .circle {
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    background: #fff;
+    z-index: 10;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.feature-icon-base .icon .circle .fas {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.explore-chapter-base .explore-card-base {
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+    height: 300px;
+    width: 260px;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+}
+
+.explore-chapter-base, .explore-chapter-base * {
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
+    transition: 0.4s all;
+}
+
+.explore-chapter-base .explore-card-base .explore-card {
+    position: absolute;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+
+.card {
+    position: absolute;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    height: 300px;
+    width: 260px;
+    border-radius: 20px;
+    background: white;
+    -webkit-transform: rotateY(350deg);
+    transform: rotateY(350deg);
+    -webkit-animation: floating 8s infinite;
+    animation: floating 8s infinite;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.inner {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 4px 7px 1px #ffffff, inset 0 -5px 20px rgba(173, 186, 204, 0.25), 0 2px 6px rgba(0, 21, 64, 0.14), 0 10px 20px rgba(0, 21, 64, 0.05);
+    box-shadow: inset 0 4px 7px 1px #ffffff, inset 0 -5px 20px rgba(173, 186, 204, 0.25), 0 2px 6px rgba(0, 21, 64, 0.14), 0 10px 20px rgba(0, 21, 64, 0.05);
+}
+
+.top {
+    background: #00cded;
+    background: -webkit-gradient(linear, left top, left bottom, from(#96d1f9), to(#00cded));
+    background: -o-linear-gradient(#96d1f9, #00cded);
+    background: linear-gradient(#96d1f9, #00cded);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 210px;
+}
+
+.explore-chapter-base .explore-card-base .explore-card .card .top .sub-title.t-top {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.explore-chapter-base .explore-card-base .explore-card .card .top .sub-title p {
+    opacity: 0.5;
+    background: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    height: 15px;
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin: auto;
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.9em;
+    letter-spacing: 0.03em;
+}
+
+.explore-chapter-base .explore-card-base .explore-card .card .top .title {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.play {
+    position: absolute;
+    right: 25px;
+    bottom: 52.5px;
+    height: 75px;
+    width: 75px;
+    background: white;
+    border-radius: 1020px;
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+    font-size: 22.5px;
+    padding-top: 21.25px;
+    padding-left: 5px;
+    color: #e6eaef;
+    text-align: center;
+}
+
+.bot {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.explore-chapter-base .explore-card-base .explore-card .card .bot p {
+    border-radius: 10px;
+    display: inline-block;
+    height: 15px;
+    width: 100px;
+    background: #f5f6f8;
+    margin: 20px;
+    margin-top: 36px;
+}
+
+@keyframes floating {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
